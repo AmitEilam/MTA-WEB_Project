@@ -1,0 +1,194 @@
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Header */
+
+/* Navbar */
+.navbar {
+  border-bottom: 2px solid var(--color-one);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* Sticky to the top */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.9);
+  z-index: 10;
+  box-shadow: 0px 0px 20px 1px rgb(240, 240, 240);
+}
+
+/* Hamburger navbar */
+.hamburger,
+.logo-hamburger {
+  display: none;
+}
+
+/* logo */
+.img {
+  width: 50px;
+  margin: 15%;
+}
+
+/* navber ul */
+.nav-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: left;
+  margin-left: 15px;
+}
+
+/* navber li */
+.nav-li {
+  display: flex;
+}
+
+/* navber a */
+.nav-a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--color-one);
+  margin-left: 20px;
+  padding: 7px 15px;
+  border: solid 1px var(--color-one);
+  border-radius: 100px;
+}
+
+/* navber a -> hover */
+.nav-a:hover,
+.active {
+  color: rgb(255, 255, 255);
+  background-color: var(--color-one);
+}
+
+/* Right Navbar -> User and Cart */
+.nav-ul-user {
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+  right: 10%;
+}
+
+.nav-li-user {
+  display: flex;
+}
+
+.nav-a-user {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--color-tow);
+  margin-left: 20px;
+  padding: 5px 15px;
+  border: solid 1px var(--color-tow);
+  border-radius: 100px;
+}
+
+.nav-a-user:hover {
+  color: rgb(255, 255, 255);
+  background-color: var(--color-tow);
+}
+
+/* the user image */
+.user-img {
+  width: 22px;
+  margin-right: 10px;
+}
+
+/* Search bar */
+/* Style the search field */
+form.search input[type='text'] {
+  margin-left: 20px;
+  padding: 6px;
+  border: 1px solid var(--color-one);
+  border-radius: 100px;
+  float: left;
+  width: 100%;
+  background: rgb(255, 255, 255, 0.7);
+}
+
+/* Style the submit search button */
+.search-img {
+  position: absolute;
+  right: -9%;
+  top: 2%;
+  border: 1px solid var(--color-one);
+  border-radius: 100px;
+  width: 33px;
+}
+
+/* Category and road stories Navbar */
+.sales-navbar,
+.road-navbar {
+  border-bottom: 1.5px solid var(--color-one);
+  /* Sticky to the top */
+  position: fixed;
+  top: 63px;
+  width: 100%;
+  z-index: 9;
+  box-shadow: 0px 0px 20px 1px rgb(240, 240, 240);
+  background-color: rgb(255, 255, 255, 0.9);
+}
+
+/* the sales and road stories navbar */
+.sales-ul,
+.road-ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: left;
+}
+
+.sales-li,
+.road-li {
+  display: flex;
+}
+
+.sales-a,
+.road-a {
+  font-size: 14px;
+  padding: 5px;
+  text-decoration: none;
+  color: var(--color-tow);
+  margin-left: 50px;
+}
+
+/* Animation */
+@keyframes animation {
+  0% {
+    color: black;
+    border-color: var(--color-one);
+  }
+  25% {
+    color: var(--color-one);
+    border-color: var(--color-tow);
+  }
+  50% {
+    color: var(--color-tow);
+    border-color: var(--color-one);
+  }
+  100% {
+    color: black;
+    border-color: var(--color-tow);
+  }
+}
+
+/* Main title */
+.main-title {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10%;
+  color: black;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: 'Verdana';
+  border-top: 2px solid var(--color-tow);
+  border-bottom: 2px solid var(--color-one);
+  -webkit-text-stroke: 1px var(--color-one);
+  margin-bottom: 5%;
+  /* Animation */
+  animation-name: animation;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}

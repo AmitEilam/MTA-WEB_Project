@@ -1,0 +1,154 @@
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Profile page */
+
+/* Title */
+.profile-account-title {
+  color: var(--color-one);
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  border-top: 2px solid var(--color-tow);
+  border-bottom: 2px solid var(--color-tow);
+  margin: 2%;
+  padding: 1%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+/* all thr section of account details */
+.account-details {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1.5px solid var(--color-one);
+  outline: 1.5px solid var(--color-tow);
+  margin: 0 7% 3% 7%;
+  padding: 0 5% 3% 5%;
+  box-shadow: 0px 0px 20px 1px rgb(240, 240, 240);
+}
+
+/* the account image */
+.account-img {
+  width: 150px;
+  margin-top: -73px;
+  margin-bottom: 3%;
+}
+
+/* the account name */
+.account-name {
+  color: var(--color-one);
+  font-size: 28px;
+}
+
+/* the account email */
+.account-email {
+  font-weight: normal;
+  margin: 0.5%;
+  margin-bottom: 50px;
+  color: var(--color-tow);
+}
+/* the datails */
+.details {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* all the details */
+.account-ID,
+.account-user-id,
+.account-user-password,
+.account-date,
+.account-owner,
+.account-card,
+.account-expire,
+.account-pin {
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+/* payment title */
+.payment-title {
+  margin: 2%;
+  text-decoration: underline;
+}
+
+/* All the btns */
+.btns-account {
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-account {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 10px;
+  padding: 5px 15px;
+  border-radius: 100px;
+}
+
+/* Edit & cancel btns */
+.edit,
+.cancel {
+  color: var(--color-one);
+  border: solid 1px var(--color-one);
+  background-color: white;
+}
+
+/* Edit & cancel btns -> hover */
+.edit:hover,
+.cancel:hover {
+  color: white;
+  border: solid 1px var(--color-one);
+  background-color: var(--color-one);
+}
+
+/* sign out btn */
+.sign-out {
+  color: var(--color-tow);
+  border: solid 1px var(--color-tow);
+  background-color: white;
+}
+
+/* sign out btn -> hover */
+.sign-out:hover {
+  color: white;
+  border: solid 1px var(--color-tow);
+  background-color: var(--color-tow);
+}
+
+/* Edit areas field */
+.edit-field {
+  margin-left: 15px;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+/* Input areas */
+.input-valid {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+/* Valid alert */
+.alert-profile {
+  color: red;
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+/* hidden class */
+.hidden {
+  display: none;
+}

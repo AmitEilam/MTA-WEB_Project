@@ -1,0 +1,35 @@
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Equipment */
+
+/* section CSS */
+section {
+  margin: 8%;
+  margin-top: 11%;
+}
+
+/* price regular */
+.sales-item-price-regular {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 14px;
+}
+
+/* active text on navbar */
+.active-text {
+  font-weight: bold;
+}
+
+/* Size chosing CSS */
+.size-choose {
+  border-radius: 100px;
+  border-color: #3286ba;
+  color: #3286ba;
+  margin: 5px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+/* hidden class */
+.hidden {
+  display: none;
+}

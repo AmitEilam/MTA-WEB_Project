@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="img/png" href="../img/Like2Hike-1T.png" />
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/sales_and_road_stories.css" />
+    <link rel="stylesheet" href="../css/slider.css" />
+    <link rel="stylesheet" href="../css/equipment.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/purchase.css" />
+    <title>Like2Hike</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img class="img img-logo" src="../img/Like2Hike-1T.png" alt="logo" />
+        </div>
+        <div class="logo-hamburger">
+          <img class="hamburger" src="../img/Hamburger_icon.png" alt="logo" />
+        </div>
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <a class="nav-a nav-home" href="../index.html">Home</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-a nav-equipment" href="equipment.html">Equipment</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-a nav-road_stories" href="road_stories.html"
+              >Road Stories</a
+            >
+          </li>
+        </ul>
+        <ul class="nav-ul-user">
+          <li class="nav-li-user">
+            <a class="nav-a-user cart" href="#">🛒 Cart</a>
+          </li>
+          <li class="nav-li-user">
+            <a class="nav-a-user user" href="profile.html"
+              ><img class="user-img" src="../img/user.png" />Amit Eilam</a
+            >
+          </li>
+        </ul>
+        <form class="search tooltip">
+          <input type="text" placeholder="Search for..." />
+          <img class="search-img" src="../img/search.png" alt="search" />
+          <span class="tooltiptext">לא מומש</span>
+        </form>
+      </nav>
+    </header>
+    <main>
+      <section class="purchase">
+        <h1 class="purchase-title">Purchase</h1>
+        <form class="purchase-list">
+          <label class="form-lable" for="fname">First name:</label>
+          <input
+            class="form-input form-name"
+            type="text"
+            name="fname"
+            placeholder="Type your first name..."
+            maxlength="12"
+          />
+          <p class="alert-purchae name hidden">*Only A-Z!</p>
+          <label class="form-lable" for="lname">Last name:</label>
+          <input
+            class="form-input form-last"
+            type="text"
+            name="lname"
+            placeholder="Type your last name..."
+            maxlength="16"
+          />
+          <p class="alert-purchae last hidden">*Only A-Z!</p>
+          <label class="form-lable" for="city">City:</label>
+          <input
+            class="form-input form-city"
+            type="text"
+            name="lname"
+            placeholder="Type your last city..."
+            maxlength="12"
+          />
+          <p class="alert-purchae city hidden">*Only A-Z!</p>
+          <label class="form-lable" for="address">Address:</label>
+          <input
+            class="form-input form-address"
+            type="text"
+            name="lname"
+            placeholder="Type your address..."
+            maxlength="32"
+          />
+          <p class="alert-purchae address hidden">*Only A-Z and 0-9!</p>
+          <label class="form-lable" for="pay">Card number:</label>
+          <input
+            class="form-input form-card"
+            type="password"
+            name="lname"
+            placeholder="Type your card number..."
+            maxlength="16"
+          />
+          <p class="alert-purchae card hidden">*Only 16 Numbers and 0-9!</p>
+          <label class="form-lable" for="expire-month"
+            >Card expire date (month):<br /><br /><select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select></label
+          >
+          <label class="form-lable" for="expire-year"
+            >Card expire date (year):<br /><br /><select>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+              <option>2026</option>
+              <option>2027</option>
+              <option>2028</option>
+              <option>2029</option>
+              <option>2030</option>
+            </select></label
+          >
+          <label class="form-lable" for="pin">Card pin:</label>
+          <input
+            class="form-input form-pin"
+            type="password"
+            name="lname"
+            placeholder="pin..."
+            maxlength="3"
+          />
+          <p class="alert-purchae pin hidden">*Only 3 Numbers and 0-9!</p>
+
+          <div class="tooltip purchase-now">
+            <input class="buy-btn" type="submit" value="Purchase Now !" />
+            <span class="tooltiptext">לא מומש</span>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">Your cart is empty!</h2>
+      <div class="cart_items"></div>
+      <p class="final-price-title hidden">Your final price:</p>
+      <p class="final-price"></p>
+      <a class="purchase-btn hidden" href="purchase.html">
+        Continue to purchase &rarr;
+      </a>
+      <a class="purchase-btn empty hidden" href="#"> Empty your cart &rarr; </a>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item tooltip">
+          <a class="footer__link" href="#">About</a
+          ><span class="tooltiptext">לא מומש</span>
+        </li>
+        <li class="footer__item tooltip">
+          <a class="footer__link" href="#">Terms of Use</a
+          ><span class="tooltiptext">לא מומש</span>
+        </li>
+        <li class="footer__item tooltip">
+          <a class="footer__link" href="#">Privacy Policy</a
+          ><span class="tooltiptext">לא מומש</span>
+        </li>
+        <li class="footer__item tooltip">
+          <a class="footer__link" href="#">Contact Us</a
+          ><span class="tooltiptext">לא מומש</span>
+        </li>
+      </ul>
+      <div class="icons">
+        <div class="footer-icons tooltip">
+          <img src="../img/icon1.png" alt="Logo" class="footer__logo" />
+          <span class="tooltiptext">לא מומש</span>
+        </div>
+        <div class="footer-icons tooltip">
+          <img src="../img/icon2.png" alt="Logo" class="footer__logo" />
+          <span class="tooltiptext">לא מומש</span>
+        </div>
+        <div class="footer-icons tooltip">
+          <img src="../img/icon3.png" alt="Logo" class="footer__logo" />
+          <span class="tooltiptext">לא מומש</span>
+        </div>
+        <div class="footer-icons tooltip">
+          <img src="../img/icon4.png" alt="Logo" class="footer__logo" />
+          <span class="tooltiptext">לא מומש</span>
+        </div>
+      </div>
+      <p class="footer__copyright">
+        &copy; Copyright by Amit Eilam, Alon Efrati and Lior Tamir.<br /><br />
+        <a class="footer__copyright">Version 14.21.12</a>
+      </p>
+    </footer>
+    <div class="background">
+      <img
+        class="background-img"
+        src="../img/background.png"
+        alt="background"
+      />
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/purchase.js"></script>
+  </body>
+</html>

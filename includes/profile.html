@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="img/png" href="../img/Like2Hike-1T.png" />
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/sales_and_road_stories.css" />
+    <link rel="stylesheet" href="../css/slider.css" />
+    <link rel="stylesheet" href="../css/equipment.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/profile.css" />
+    <link rel="stylesheet" href="../css/purchase.css" />
+    <title>Like2Hike</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img class="img img-logo" src="../img/Like2Hike-1T.png" alt="logo" />
+        </div>
+        <div class="logo-hamburger">
+          <img class="hamburger" src="../img/Hamburger_icon.png" alt="logo" />
+        </div>
+        <ul class="nav-ul">
+          <li class="nav-li">
+            <a class="nav-a nav-home" href="../index.html">Home</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-a nav-equipment" href="equipment.html">Equipment</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-a nav-road_stories" href="road_stories.html"
+              >Road Stories</a
+            >
+          </li>
+        </ul>
+        <ul class="nav-ul-user">
+          <li class="nav-li-user">
+            <a class="nav-a-user cart" href="#">🛒 Cart</a>
+          </li>
+          <li class="nav-li-user">
+            <a class="nav-a-user user" href="profile.html"
+              ><img class="user-img" src="../img/user.png" />Amit Eilam</a
+            >
+          </li>
+        </ul>
+        <form class="search tooltip">
+          <input type="text" placeholder="Search for..." />
+          <img class="search-img" src="../img/search.png" alt="search" />
+          <span class="tooltiptext">לא מומש</span>
+        </form>
+      </nav>
+    </header>
+    <main>
+      <section class="profile-account">
+        <h1 class="profile-account-title">Your Account</h1>
+        <div class="account-details">
+          <img class="account-img" src="../img/user.png" alt="user-pic" />
+          <h1 class="account-name">Amit Eilam</h1>
+          <h3 class="account-email">amiteilam10@gmail.com</h3>
+          <div class="details">
+            <h1 class="account-ID">Account ID:</h1>
+            <h3 class="account-ID-value">WA12456</h3>
+          </div>
+          <div class="details">
+            <h1 class="account-date">Membership Start Date:</h1>
+            <h3 class="account-date-value">11/12/22</h3>
+          </div>
+          <div class="details">
+            <h1 class="account-user-id">User Name:</h1>
+            <h3 class="account-user-id-value">amit12</h3>
+          </div>
+          <div class="details">
+            <h1 class="account-user-password">User Password:</h1>
+            <h3 class="account-password-value">123456a</h3>
+          </div>
+          <h1 class="payment-title">Payment Details:</h1>
+          <div class="details hide hidden">
+            <h1 class="account-owner">Card Owner:</h1>
+            <h3 class="account-owner-value">Amit Eilam</h3>
+            <div class="input-valid">
+              <input
+                class="edit-field edit-name"
+                type="text"
+                placeholder="type new owner.."
+                maxlength="24"
+              />
+              <p class="alert-profile alert-name hidden">*Only A-Z!</p>
+            </div>
+          </div>
+          <div class="details">
+            <h1 class="account-card">Card Number:</h1>
+            <h3 class="account-card-value">1234-5678-1234-5678</h3>
+            <h3 class="account-card-value-display hidden">
+              1234-5678-1234-5678
+            </h3>
+            <div class="input-valid">
+              <input
+                class="edit-field edit-card hidden"
+                type="password"
+                placeholder="type new number.."
+                maxlength="16"
+              />
+              <p class="alert-profile alert-card hidden">*Only 16 numbers!</p>
+            </div>
+          </div>
+          <div class="details hide hidden">
+            <h1 class="account-expire">Card Expire Date:</h1>
+            <h3 class="account-expire-value">11/25</h3>
+            <div class="input-valid">
+              <input
+                class="edit-field edit-date"
+                type="text"
+                placeholder="type new date.."
+                maxlength="5"
+              />
+              <p class="alert-profile alert-date hidden">*Only 4 numbers!</p>
+            </div>
+          </div>
+          <div class="details hide hidden">
+            <h1 class="account-pin" type="password">Card Pin:</h1>
+            <h3 class="account-pin-value">123</h3>
+            <div class="input-valid">
+              <input
+                class="edit-field edit-pin"
+                type="password"
+                placeholder="type new pin.."
+                maxlength="3"
+              />
+              <p class="alert-profile alert-pin hidden">*Only 3 numbers!</p>
+            </div>
+          </div>
+          <div class="btns-account">
+            <button class="btn-account edit">Edit Your Payment</button>
+            <button class="btn-account cancel hidden">Cancel</button>
+            <button class="btn-account sign-out tooltip">
+              Sign Out<span class="tooltiptext">לא מומש</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">Your cart is empty!</h2>
+      <div class="cart_items"></div>
+      <p class="final-price-title hidden">Your final price:</p>
+      <p class="final-price"></p>
+      <a class="purchase-btn hidden" href="purchase.html">
+        Continue to purchase &rarr;
+      </a>
+      <a class="purchase-btn empty hidden" href="#"> Empty your cart &rarr; </a>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item tooltip">
+          <a class="footer__link" href="#">About</a
+          ><span class="tooltiptext">לא מומש</span>
+        </li>
+        <li class="footer__item tooltip">
+          <a class="footer__link" href="#">Terms of Use</a
+          ><span class="tooltiptext">לא מומש</span>
+        </li>
+        <li class="footer__item tooltip">
+          <a class="footer__link" href="#">Privacy Policy</a
+          ><span class="tooltiptext">לא מומש</span>
+        </li>
+        <li class="footer__item tooltip">
+          <a class="footer__link" href="#">Contact Us</a
+          ><span class="tooltiptext">לא מומש</span>
+        </li>
+      </ul>
+      <div class="icons">
+        <div class="footer-icons tooltip">
+          <img src="../img/icon1.png" alt="Logo" class="footer__logo" />
+          <span class="tooltiptext">לא מומש</span>
+        </div>
+        <div class="footer-icons tooltip">
+          <img src="../img/icon2.png" alt="Logo" class="footer__logo" />
+          <span class="tooltiptext">לא מומש</span>
+        </div>
+        <div class="footer-icons tooltip">
+          <img src="../img/icon3.png" alt="Logo" class="footer__logo" />
+          <span class="tooltiptext">לא מומש</span>
+        </div>
+        <div class="footer-icons tooltip">
+          <img src="../img/icon4.png" alt="Logo" class="footer__logo" />
+          <span class="tooltiptext">לא מומש</span>
+        </div>
+      </div>
+      <p class="footer__copyright">
+        &copy; Copyright by Amit Eilam, Alon Efrati and Lior Tamir.<br /><br />
+        <a class="footer__copyright">Version 14.21.12</a>
+      </p>
+    </footer>
+    <div class="background">
+      <img
+        class="background-img"
+        src="../img/background.png"
+        alt="background"
+      />
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/profile.js"></script>
+  </body>
+</html>

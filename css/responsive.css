@@ -1,0 +1,156 @@
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Responsive */
+
+@media (max-width: 950px) {
+  /* main title */
+  .main-title {
+    font-size: 20px;
+    margin-bottom: -20%;
+  }
+
+  /* Background */
+  .background {
+    display: none;
+  }
+
+  /* sales title */
+  .sales-title {
+    margin-top: 30%;
+  }
+
+  /* logo */
+  .img-logo {
+    position: fixed;
+    right: 6%;
+    top: 0.1%;
+    width: 8%;
+    margin: 0.5%;
+  }
+
+  /* navbar */
+  .navbar,
+  .nav-ul,
+  .nav-ul-user {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-a,
+  .nav-a-user {
+    margin-bottom: 5%;
+    border-radius: 0;
+    margin-left: 0;
+    border: none;
+  }
+
+  .nav-a:hover,
+  .active {
+    color: var(--color-one);
+    background-color: white;
+    font-weight: bold;
+  }
+
+  .nav-a-user:hover {
+    color: var(--color-tow);
+    background-color: white;
+    font-weight: bold;
+  }
+
+  /* hamburger bar */
+  .hamburger,
+  .logo-hamburger {
+    width: 30%;
+    display: flex;
+    justify-content: left;
+  }
+
+  /* search bar */
+  .search {
+    margin-bottom: 3px;
+    margin-left: -10px;
+  }
+
+  /* sales and road stories navbar */
+  .sales-a,
+  .road-a {
+    margin-left: 3px;
+    background-color: rgb(253, 253, 253);
+  }
+
+  .sales-navbar,
+  .road-navbar {
+    top: 90px;
+    background: none;
+    border: none;
+    z-index: 10;
+    width: 10px;
+  }
+
+  .sales-ul,
+  .road-ul {
+    flex-direction: column;
+  }
+
+  .sales-item {
+    width: 300px;
+  }
+
+  /* tooltip cart */
+  .tooltip-popup .tooltiptext-popup {
+    display: none;
+  }
+
+  /* road stories image */
+  .road_stories-img {
+    width: 200px;
+  }
+
+  /* purchase */
+  .purchase-btn {
+    font-size: 12px;
+  }
+
+  .purchase-list input {
+    font-size: 12px;
+  }
+
+  /* profile */
+  .account-details h1,
+  .account-details h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .account-details h1 {
+    margin-top: 20px;
+    text-decoration-line: underline;
+  }
+
+  .account-details input {
+    margin-left: 0;
+    font-size: 12px;
+  }
+
+  .details {
+    flex-direction: column !important;
+  }
+
+  /* modal */
+  .modal__header {
+    font-size: 200%;
+  }
+
+  /* footer */
+  .footer__link,
+  .footer__copyright {
+    font-size: 12px;
+  }
+
+  .footer__logo {
+    width: 35px;
+  }
+
+  .hidden {
+    display: none;
+  }
+}

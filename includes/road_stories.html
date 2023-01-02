@@ -4,139 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="img/png" href="img/Like2Hike-1T.png" />
-    <link rel="stylesheet" href="css/default.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/sales_and_road_stories.css" />
-    <link rel="stylesheet" href="css/slider.css" />
-    <link rel="stylesheet" href="css/equipment.css" />
-    <link rel="stylesheet" href="css/modal.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-
+    <link rel="shortcut icon" type="img/png" href="../img/Like2Hike-1T.png" />
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/sales_and_road_stories.css" />
+    <link rel="stylesheet" href="../css/slider.css" />
+    <link rel="stylesheet" href="../css/equipment.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
     <title>Like2Hike</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
         <div class="logo">
-          <img class="img img-logo" src="img/Like2Hike-1T.png" alt="logo" />
+          <img class="img img-logo" src="../img/Like2Hike-1T.png" alt="logo" />
         </div>
         <div class="logo-hamburger">
-          <img class="hamburger" src="img/Hamburger_icon.png" alt="logo" />
+          <img class="hamburger" src="../img/Hamburger_icon.png" alt="logo" />
         </div>
         <ul class="nav-ul">
           <li class="nav-li">
-            <a class="nav-a nav-home active" href="index.html">Home</a>
+            <a class="nav-a nav-home" href="../index.html">Home</a>
           </li>
           <li class="nav-li">
-            <a class="nav-a nav-equipment" href="includes/equipment.html"
-              >Equipment</a
-            >
+            <a class="nav-a nav-equipment" href="equipment.html">Equipment</a>
           </li>
           <li class="nav-li">
-            <a class="nav-a nav-road_stories" href="includes/road_stories.html"
+            <a class="nav-a nav-road_stories active" href="road_stories.html"
               >Road Stories</a
             >
           </li>
         </ul>
         <ul class="nav-ul-user">
-          <li class="nav-li-user tooltip-popup">
+          <li class="nav-li-user">
             <a class="nav-a-user cart" href="#">🛒 Cart</a>
-            <span class="tooltiptext-popup">Added to cart!</span>
           </li>
           <li class="nav-li-user">
-            <a class="nav-a-user user" href="includes/profile.html"
-              ><img class="user-img" src="img/user.png" />Amit Eilam</a
+            <a class="nav-a-user user" href="profile.html"
+              ><img class="user-img" src="../img/user.png" />Amit Eilam</a
             >
           </li>
         </ul>
         <form class="search tooltip">
           <input type="text" placeholder="Search for..." />
-          <img class="search-img" src="img/search.png" alt="search" />
+          <img class="search-img" src="../img/search.png" alt="search" />
           <span class="tooltiptext">לא מומש</span>
         </form>
       </nav>
+      <nav class="road-navbar">
+        <ul class="road-ul">
+          <li class="road-li">
+            <a class="road-a click-all active-text" href="#">All Stories</a>
+          </li>
+          <li class="road-li">
+            <a class="road-a click-world" href="#">World Stories</a>
+          </li>
+          <li class="road-li">
+            <a class="road-a click-israel" href="#">Israel Stories</a>
+          </li>
+          <li class="road-li">
+            <a class="road-a click-favorite" href="#">My Favorite Stories</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <section class="sales">
-        <h1 class="main-title">The traveler's home</h1>
-        <h1 class="sales-title">🏷️ Sales</h1>
-        <div class="sales-items">
-          <div class="sales-item">
-            <img src="img/backpack1.jpeg" alt="backpack1" />
-            <h2 class="sales-item-title">Man Osprey Ather 70L Backpack</h2>
-            <h3 class="sales-item-price">
-              399$
-              <h3 class="sales-item-price-high">410$</h3>
-            </h3>
-            <button class="add-To">Add to cart</button>
-          </div>
-          <div class="sales-item">
-            <img src="img/jacket2.jpeg" alt="jacket2" />
-            <h2 class="sales-item-title">Women Mountain Equipment Jacket</h2>
-            <h3 class="sales-item-price">
-              199$
-              <h3 class="sales-item-price-high">220$</h3>
-            </h3>
-            <select class="size-choose">
-              <option>Size 38</option>
-              <option>Size 39</option>
-              <option>Size 40</option>
-              <option>Size 41</option>
-              <option>Size 42</option>
-              <option>Size 43</option>
-              <option>Size 44</option>
-            </select>
-            <button class="add-To">Add to cart</button>
-          </div>
-          <div class="sales-item">
-            <img src="img/shoes1.jpeg" alt="shoes1" />
-            <h2 class="sales-item-title">Man Garmont Dragontail Shoes</h2>
-            <h3 class="sales-item-price">
-              299$
-              <h3 class="sales-item-price-high">330$</h3>
-            </h3>
-            <select class="size-choose">
-              <option>Size 38</option>
-              <option>Size 39</option>
-              <option>Size 40</option>
-              <option>Size 41</option>
-              <option>Size 42</option>
-              <option>Size 43</option>
-              <option>Size 44</option>
-            </select>
-            <button class="add-To">Add to cart</button>
-          </div>
-        </div>
-      </section>
-
       <section class="road_stories">
-        <h1 class="road_stories-title">🥾 Recent Road Stories</h1>
+        <h1 class="road_stories-title">🗺️ All Stories</h1>
         <section class="road_stories-items">
-          <div class="road_stories-item">
-            <img class="flag-img" src="img/argentina.jpeg" alt="argentina" />
+          <div class="road_stories-item world">
+            <p class="add-to-favorite">Add to ❤️</p>
+            <img class="flag-img" src="../img/argentina.jpeg" alt="argentina" />
             <h2 class="road_stories-item-title">
-              <img class="location-img" src="img/location.png" /> Fitzroy,
+              <img class="location-img" src="../img/location.png" /> Fitzroy,
               Argentina
             </h2>
             <h6 class="road_stories-item-autor">
-              <img class="author-img" src="img/user.png" /> Amit Eilam
+              <img class="author-img" src="../img/user.png" /> Amit Eilam
             </h6>
             <div class="road_stories-imgs">
               <img
                 class="road_stories-img"
-                src="img/fitz1.jpeg"
+                src="../img/fitz1.jpeg"
                 alt="fitz-roy"
               />
               <img
                 class="road_stories-img"
-                src="img/fitz2.jpeg"
+                src="../img/fitz2.jpeg"
                 alt="fitz-roy"
               />
               <img
                 class="road_stories-img"
-                src="img/fitz3.jpeg"
+                src="../img/fitz3.jpeg"
                 alt="fitz-roy"
               />
             </div>
@@ -222,29 +183,30 @@
             </p>
             <button class="read-more read-more1">Read More...</button>
           </div>
-          <div class="road_stories-item">
-            <img class="flag-img" src="img/peru.png" alt="peru" />
+          <div class="road_stories-item world">
+            <p class="add-to-favorite">Add to ❤️</p>
+            <img class="flag-img" src="../img/peru.png" alt="peru" />
             <h2 class="road_stories-item-title">
-              <img class="location-img" src="img/location.png" /> Huayhuash,
+              <img class="location-img" src="../img/location.png" /> Huayhuash,
               Peru
             </h2>
             <h6 class="road_stories-item-autor">
-              <img class="author-img" src="img/user2.png" /> Alon Efrati
+              <img class="author-img" src="../img/user2.png" /> Alon Efrati
             </h6>
             <div class="road_stories-imgs">
               <img
                 class="road_stories-img"
-                src="img/Huayhuash1.jpeg"
+                src="../img/Huayhuash1.jpeg"
                 alt="Huayhuash"
               />
               <img
                 class="road_stories-img"
-                src="img/Huayhuash2.jpeg"
+                src="../img/Huayhuash2.jpeg"
                 alt="Huayhuash"
               />
               <img
                 class="road_stories-img"
-                src="img/Huayhuash3.jpeg"
+                src="../img/Huayhuash3.jpeg"
                 alt="Huayhuash"
               />
             </div>
@@ -319,71 +281,139 @@
             </p>
             <button class="read-more read-more2">Read More...</button>
           </div>
+
+          <div class="road_stories-item world">
+            <p class="add-to-favorite">Add to ❤️</p>
+            <img class="flag-img" src="../img/spain.png" alt="spain" />
+            <h2 class="road_stories-item-title">
+              <img class="location-img" src="../img/location.png" /> Camino de
+              Santiago, Spain
+            </h2>
+            <h6 class="road_stories-item-autor">
+              <img class="author-img" src="../img/user3.png" /> Lior Tamir
+            </h6>
+            <div class="road_stories-imgs">
+              <img class="road_stories-img" src="../img/spn1.png" alt="spain" />
+              <img class="road_stories-img" src="../img/spn2.png" alt="spain" />
+              <img class="road_stories-img" src="../img/spn3.png" alt="spain" />
+            </div>
+            <p class="road_stories-p road_stories-p3">
+              DAY 1: PAMPLONA, SPAIN <br /><br />Arrive at Pamplona Airport
+              (PNA) and transfer to our historic hotel, once a haunt of Ernest
+              Hemingway. After an orientation, set out on a walk through the old
+              city and the streets made famous by the running of the bulls. Meet
+              up for a welcome dinner tonight.<br /><br />DAY 2:
+              LOGROÑO/NAVARRETE<br /><br />Descend out of the foothills of the
+              Pyrenees to La Rioja, one of Spain’s most celebrated wine regions,
+              and set off along El Camino, walking through vineyards to the
+              village of Navarrete. In the afternoon, visit the Yuso and Suso
+              monasteries of San Millán de la Cogolla, a World Heritage site
+              considered the birthplace of the Spanish language. Stop for a wine
+              tasting at a local bodega before settling in to our hotel. (8
+              miles hiking, 4 hours).<br /><br />DAY 3: ATAPUERCA/BURGOS<br /><br />Today’s
+              route rises onto the Meseta Central, high plains that stretch
+              across much of central Spain. Pick up the trail in Atapuerca and
+              head towards Burgos. Walk into the center of the ninth-century
+              city, a former capital of the kingdom of Castile and home to the
+              Spanish national hero El Cid. Take a guided tour of the old town
+              and its 13th-century Gothic cathedral, a World Heritage site.
+              (12–13 miles hiking, 5–6 hours).<br /><br />DAY 4:
+              FROMISTA/CARRIÓN DE LOS CONDES<br /><br />Transfer to Fromista,
+              then continue across the Meseta, rambling through the endless
+              green and gold fields of the Tierra de Campos. This land is filled
+              with the history of La Reconquista, when Christian kingdoms
+              succeeded in retaking areas of the Iberian Peninsula controlled by
+              Moors. Arrive in the town of Carrión de los Condes, and stay the
+              night in a historic monastery. (11 miles, 5 hours hiking).<br /><br />DAY
+              5: SAHAGÚN/BERCIANOS DEL CAMINO/LEÓN<br /><br />Start off from the
+              medieval city of Sahagún and head west to the village of Bercianos
+              del Real Camino. Drive on to León for lunch and spend the
+              afternoon discovering the city’s historic sites, including a
+              guided visit through its remarkable cathedral, filled with more
+              than a hundred stained glass windows. Enjoy dinner on your own
+              this evening, and spend the night in a spectacular Renaissance
+              convent. (5–6 miles hiking, 3 hours).
+            </p>
+            <button class="read-more read-more3">Read More...</button>
+          </div>
+
+          <div class="road_stories-item israel">
+            <p class="add-to-favorite">Add to ❤️</p>
+            <img class="flag-img" src="../img/israel.jpeg" alt="israel" />
+            <h2 class="road_stories-item-title">
+              <img class="location-img" src="../img/location.png" /> Golan
+              Trail, Israel
+            </h2>
+            <h6 class="road_stories-item-autor">
+              <img class="author-img" src="../img/user3.png" /> Lior Tamir
+            </h6>
+            <div class="road_stories-imgs">
+              <img
+                class="road_stories-img"
+                src="../img/golan1.webp"
+                alt="golan"
+              />
+              <img
+                class="road_stories-img"
+                src="../img/golan2.jpeg"
+                alt="golan"
+              />
+              <img
+                class="road_stories-img"
+                src="../img/golan3.jpeg"
+                alt="golan"
+              />
+            </div>
+            <p class="road_stories-p road_stories-p4">
+              The Golan Trail is a marked path that stretches for 120 kilometers
+              with breathtaking scenery. Hikers on the Golan Trail can see views
+              of Mt. Hermon and Lake Kinneret, volcanos and reservoirs,
+              wildflowers and archaeological sites. The trail begins in the
+              north on Mt. Hermon, and ends with a view of Lake Kinneret in the
+              south; the path is marked with blue, white and green stripes. The
+              Golan Trail has become a popular “pilgrimage hike” in recent
+              years.<br /><br />
+              The recommended season for hiking the trail is spring, especially
+              the months of March and April. At this time of year, the Golan is
+              “painted” green, and wildflower blooming is at its peak. The
+              southern segments of the Golan Trail can be hiked in the winter
+              (from October to February), too. Since this area is about 300-400
+              meters above sea level, the winters are relatively mild (except
+              for rainy days). The northern segments can be hiked in May,
+              throughout the summer, and again in September. Most of the
+              northern segments are at a height of 1,000 meters above sea level,
+              and the summers are relatively mild; many of the segments are
+              heavily shaded.<br /><br />The Golan Trail is divided into 15
+              segments of different lengths, all between 6 and 11 kilometers per
+              segment. Each segment has a starting and ending point that is
+              accessible by car; if there are two cars, one can be left at the
+              end for convenience.<br /><br />People still hitchhike safely in
+              the Golan, but there is also public transportation that can help
+              hikers at the beginning and ending of most trails.<br /><br />Each
+              segment can be hiked in a day or less, and the difficulty level is
+              usually easy-to-intermediate. Advanced hikers can finish two
+              segments per day (we don’t recommend hiking any more than two
+              segments at a time).<br /><br />For those hiking “with their homes
+              on their backs”, the Golan Trail usually takes about 7-9 days to
+              finish; there are free camping sites along the way. But the Golan
+              also offers many diverse kinds of lodgings: one can stay at a paid
+              campsite with minimum creature comforts, or one can stay at a
+              fancy B and B; both options can be found relatively near the
+              trail.<br /><br />For those hiking the Golan Trail, one must have
+              an updated version of Trail Map #1 (the map with the official
+              trails marked clearly), which is updated from time to time.
+              Another possibility is to have an app on your smartphone that
+              includes the same trail markings and information that are on the
+              physical map.<br /><br />While hiking in the Golan, it is
+              absolutely forbidden to cross fences or go off the marked trail;
+              in a number of places, the trail is not far from well-signed
+              minefields (which are all marked on official maps and apps).
+            </p>
+            <button class="read-more read-more4">Read More...</button>
+          </div>
         </section>
       </section>
     </main>
-
-    <section class="section section--hidden" id="section--3">
-      <h1 class="road_stories-title">✍🏻 Recommended</h1>
-      <div class="section__title section__title--testimonials"></div>
-
-      <div class="slider">
-        <div class="slide slide--1">
-          <div class="testimonial">
-            <h5 class="testimonial__header">Fair prices and kind service!</h5>
-            <blockquote class="testimonial__text">
-              After searching all kinds of websites in Israel, I noticed that
-              the website here offers affordable prices, new equipment and the
-              service was extremely kind!
-            </blockquote>
-            <address class="testimonial__author">
-              <img src="img/user.png" alt="" class="testimonial__photo" />
-              <h6 class="testimonial__name">Eran Tal</h6>
-              <p class="testimonial__location">Tel Aviv, ISRAEL</p>
-            </address>
-          </div>
-        </div>
-
-        <div class="slide slide--2">
-          <div class="testimonial">
-            <h5 class="testimonial__header">
-              Before you fly to your destination, read here!
-            </h5>
-            <blockquote class="testimonial__text">
-              Before the big trip, I read here travel stories about treks I
-              should do at my destination. I used all the tips listed here.
-              There is no doubt that it changed my trip! Highly recommend.
-            </blockquote>
-            <address class="testimonial__author">
-              <img src="img/user2.png" alt="" class="testimonial__photo" />
-              <h6 class="testimonial__name">Moshe Levi</h6>
-              <p class="testimonial__location">Hifa, Israel</p>
-            </address>
-          </div>
-        </div>
-
-        <div class="slide slide--3">
-          <div class="testimonial">
-            <h5 class="testimonial__header">Finally great customer service</h5>
-            <blockquote class="testimonial__text">
-              I came to the store to buy equipment for a big trip abroad. After
-              many recommendations and superior service, I purchased additional
-              equipment through the site. The equipment arrived quickly, and in
-              a complete form. Excellent service as always.
-            </blockquote>
-            <address class="testimonial__author">
-              <img src="img/user3.png" alt="" class="testimonial__photo" />
-              <h6 class="testimonial__name">David Cohen</h6>
-              <p class="testimonial__location">Jerusalem, ISRAEL</p>
-            </address>
-          </div>
-        </div>
-
-        <button class="slider__btn slider__btn--left">&larr;</button>
-        <button class="slider__btn slider__btn--right">&rarr;</button>
-        <div class="dots"></div>
-      </div>
-    </section>
 
     <div class="modal hidden">
       <button class="btn--close-modal">&times;</button>
@@ -391,11 +421,7 @@
       <div class="cart_items"></div>
       <p class="final-price-title hidden">Your final price:</p>
       <p class="final-price"></p>
-      <a
-        class="purchase-btn hidden"
-        target="_blank"
-        href="includes/purchase.html"
-      >
+      <a class="purchase-btn hidden" href="purchase.html">
         Continue to purchase &rarr;
       </a>
       <a class="purchase-btn empty hidden" href="#"> Empty your cart &rarr; </a>
@@ -423,19 +449,19 @@
       </ul>
       <div class="icons">
         <div class="footer-icons tooltip">
-          <img src="img/icon1.png" alt="Logo" class="footer__logo" />
+          <img src="../img/icon1.png" alt="Logo" class="footer__logo" />
           <span class="tooltiptext">לא מומש</span>
         </div>
         <div class="footer-icons tooltip">
-          <img src="img/icon2.png" alt="Logo" class="footer__logo" />
+          <img src="../img/icon2.png" alt="Logo" class="footer__logo" />
           <span class="tooltiptext">לא מומש</span>
         </div>
         <div class="footer-icons tooltip">
-          <img src="img/icon3.png" alt="Logo" class="footer__logo" />
+          <img src="../img/icon3.png" alt="Logo" class="footer__logo" />
           <span class="tooltiptext">לא מומש</span>
         </div>
         <div class="footer-icons tooltip">
-          <img src="img/icon4.png" alt="Logo" class="footer__logo" />
+          <img src="../img/icon4.png" alt="Logo" class="footer__logo" />
           <span class="tooltiptext">לא מומש</span>
         </div>
       </div>
@@ -445,12 +471,15 @@
       </p>
     </footer>
     <div class="background">
-      <img class="background-img" src="img/background.png" alt="background" />
+      <img
+        class="background-img"
+        src="../img/background.png"
+        alt="background"
+      />
     </div>
-    <script src="js/app.js"></script>
-    <script src="js/read_more_home.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/add_to_cart.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/read_more.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/road_category.js"></script>
   </body>
 </html>
